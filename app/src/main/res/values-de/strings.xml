@@ -11,4 +11,6 @@
     <string name="switchText">Was macht es?</string>
     <string name="checkbox">Checkbox</string>
     <string name="radiobutton">Radio Button</string>
+    <string name="loginButton">login</string>
+    <string name="loginError">Kein Passwort ode falsches Email Format</string>
 </resources>

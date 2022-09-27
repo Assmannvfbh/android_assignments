@@ -10,5 +10,7 @@
     <string name="switchText">What does it do?</string>
     <string name="checkbox">Checkbox</string>
     <string name="radiobutton">Radio Button</string>
+    <string name="loginButton">login</string>
+    <string name="loginError">Missing Password or incorrect Emil format</string>
 
 </resources>
