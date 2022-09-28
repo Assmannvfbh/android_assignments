@@ -19,6 +19,8 @@
     <string name="dialogYes">Ok</string>
     <string name="dialogNo">Cancel</string>
     <string name="dialogNoToast">Nothing happend</string>
+    <string name="toastPutExtra">ListItemsActivity shared:</string>
+    <string name="myResponse">Here is my response.</string>
 
 
 </resources>

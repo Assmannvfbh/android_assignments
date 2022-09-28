@@ -20,4 +20,6 @@
     <string name="dialogYes">Ok</string>
     <string name="dialogNo">Abbrechen</string>
     <string name="dialogNoToast">Nicht passiert</string>
+    <string name="toastPutExtra">ListItemsActivity teilt mit:</string>
+    <string name="myResponse">Hier ist meine Antwort.</string>
 </resources>

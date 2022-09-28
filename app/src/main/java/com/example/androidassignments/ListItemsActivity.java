@@ -4,6 +4,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -18,7 +19,7 @@ import android.widget.Switch;
 import android.widget.Toast;
 
 public class ListItemsActivity extends AppCompatActivity {
-    private static final int photoID = 100;
+    private final int requestCode = 10;
     protected final String ACTIVITY_NAME = "ListItemsActivity";
     ImageButton imageButton;
     Switch aSwitch;
@@ -40,7 +41,7 @@ public class ListItemsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent photoIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(photoIntent,photoID);
+                startActivityForResult(photoIntent, requestCode);
             }
         });
 
@@ -69,7 +70,12 @@ public class ListItemsActivity extends AppCompatActivity {
                         .setPositiveButton(R.string.dialogYes, new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
+                                Intent resultIntent = new Intent(  );
+                                resultIntent.putExtra("Response", getResources().getString(R.string.myResponse));
+                                setResult(Activity.RESULT_OK, resultIntent);
+
                                 finish();
+                                print("onFinish()");
                             }
                         })
                         .setNegativeButton(R.string.dialogNo, new DialogInterface.OnClickListener() {
@@ -86,7 +92,7 @@ public class ListItemsActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == photoID) {
+        if (requestCode == this.requestCode) {
             Bitmap photo = (Bitmap) data.getExtras().get("data");
             imageButton.setImageBitmap(photo);
         }

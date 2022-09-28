@@ -70,7 +70,7 @@ public class LoginActivity extends AppCompatActivity {
     public void login(View view) {
         String emailDomain = emailField.getText().toString();
         emailPref.edit().putString("DefaultEmail",emailDomain).commit();
-        if(!passwordField.getText().toString().isEmpty() && Pattern.matches("\\w*@\\w*.com", emailDomain)) {
+        if(!passwordField.getText().toString().isEmpty() && android.util.Patterns.EMAIL_ADDRESS.matcher(emailDomain).matches()) {
             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
             startActivity(intent);
         }
