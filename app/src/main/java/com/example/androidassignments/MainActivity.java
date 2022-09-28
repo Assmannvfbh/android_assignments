@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -61,5 +62,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         Log.i(ACTIVITY_NAME, "Returned to MainActivity.onActivityResult");
+    }
+
+    public void print(String message){
+        Toast.makeText(this, message, Toast.LENGTH_LONG).show();
     }
 }

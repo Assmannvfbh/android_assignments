@@ -79,4 +79,7 @@ public class LoginActivity extends AppCompatActivity {
         }
 
     }
+    public void print(String message){
+        Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+    }
 }

@@ -12,5 +12,13 @@
     <string name="radiobutton">Radio Button</string>
     <string name="loginButton">login</string>
     <string name="loginError">Missing Password or incorrect Emil format</string>
+    <string name="switchON">Switch is on</string>
+    <string name="switchOFF">Switch is off</string>
+    <string name="dialogBoxMessage">Do you want to exit this activity?</string>
+    <string name="dialogBoxTitle">Warning!</string>
+    <string name="dialogYes">Ok</string>
+    <string name="dialogNo">Cancel</string>
+    <string name="dialogNoToast">Nothing happend</string>
+
 
 </resources>
