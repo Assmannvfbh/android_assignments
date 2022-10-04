@@ -31,11 +31,6 @@ public class ListItemsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_list_items);
         Log.i(ACTIVITY_NAME, "in onCreate()");
 
-
-        //builder setter methods
-
-
-
         imageButton = findViewById(R.id.imageButton);
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
