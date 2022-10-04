@@ -21,6 +21,8 @@
     <string name="dialogNoToast">Nothing happend</string>
     <string name="toastPutExtra">ListItemsActivity shared:</string>
     <string name="myResponse">Here is my response.</string>
+    <string name="startChat">Start Chat</string>
+    <string name="sendButton">Send</string>
 
 
 </resources>

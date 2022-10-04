@@ -15,6 +15,7 @@
     <string name="loginError">Kein Passwort ode falsches Email Format</string>
     <string name="switchON">Switch ist an</string>
     <string name="switchOFF">Switch ist aus</string>
+
     <string name="dialogBoxMessage">Wollen Sie diese Aktivität verlassen?</string>
     <string name="dialogBoxTitle">Warnung!</string>
     <string name="dialogYes">Ok</string>
@@ -22,4 +23,7 @@
     <string name="dialogNoToast">Nicht passiert</string>
     <string name="toastPutExtra">ListItemsActivity teilt mit:</string>
     <string name="myResponse">Hier ist meine Antwort.</string>
+
+    <string name="startChat">Starte Chat</string>
+    <string name="sendButton">Senden</string>
 </resources>

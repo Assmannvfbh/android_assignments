@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
 
     protected final String ACTIVITY_NAME = "MainActivity";
     protected Button mainButton;
+    protected Button chatButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Log.i(ACTIVITY_NAME, "in onCreate()");
         mainButton = findViewById(R.id.buttonMain);
+
+        chatButton = findViewById(R.id.chatButton);
+        chatButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i(ACTIVITY_NAME, "User clicked Start Chat");
+                Intent intent = new Intent(MainActivity.this, ChatWindowActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
