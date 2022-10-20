@@ -26,4 +26,27 @@
 
     <string name="startChat">Starte Chat</string>
     <string name="sendButton">Senden</string>
+
+    <string name="sun">Sonne</string>
+    <string name="campfire">Lagerfeuer</string>
+    <string name="hearts">Herzen</string>
+    <string name="toolbarButton">Toolbar Menü</string>
+    <string name="snackbar">Das ist eine Snackbar Message</string>
+    <string name="menu1snackbar">Sie haben Item 1 ausgewählt</string>
+    <string name="about">1.0, by Niklas Aßmann</string>
+    <string name="alertDialogToolbar">Wollen Sie zurück?</string>
+    <string name="newMessage">Bitte Nachricht eingeben</string>
+    <string name="messageHint">Nachricht</string>
+    <string name="noCharacter">Bitte Zeichen eingeben</string>
+
+
+
+    <!-- Not used -->
+    <string name="title_activity_copy">Copy</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>

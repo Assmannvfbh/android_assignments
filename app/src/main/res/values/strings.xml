@@ -39,11 +39,12 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
     <string name="snackbar">This is a Snackbar Message</string>
-    <string name="snackbar1">You selected Item 1</string>
+    <string name="menu1snackbar">You selected Item 1</string>
     <string name="about">1.0, by Niklas Aßmann</string>
     <string name="alertDialogToolbar">Do you want to go back?</string>
-
-
+    <string name="newMessage">Enter new Message</string>
+    <string name="messageHint">Message</string>
+    <string name="noCharacter">Please enter characters</string>
 
 
 </resources>

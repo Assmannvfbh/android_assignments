@@ -64,11 +64,6 @@ public class MainActivity extends AppCompatActivity {
         Log.i(ACTIVITY_NAME, "in onDestroy()");
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.toolbar_menu, menu );
-        return true;
-    }
 
     @Override
     protected void onPause() {
