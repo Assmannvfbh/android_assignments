@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/sunMenu"
+        android:title="@string/sun"
+        android:icon="@drawable/icons8_sun_48"
+        android:orderInCategory="101"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/campfireMenu"
+        android:title="@string/campfire"
+        android:icon="@drawable/icons8_campfire_48"
+        android:orderInCategory="102"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/heartsMenu"
+        android:title="@string/hearts"
+        android:icon="@drawable/icons8_two_hearts_48"
+        android:orderInCategory="103"
+        app:showAsAction="always" />
+
+    <item android:title="About"
+        android:id="@+id/aboutMenu"
+        app:showAsAction="never"/>
+
+
+
+</menu>

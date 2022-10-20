@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     protected final String ACTIVITY_NAME = "MainActivity";
     protected Button mainButton;
     protected Button chatButton;
+    protected Button toolbarButton;
 
 
     @Override
@@ -31,6 +33,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Log.i(ACTIVITY_NAME, "User clicked Start Chat");
                 Intent intent = new Intent(MainActivity.this, ChatWindowActivity.class);
+                startActivity(intent);
+            }
+        });
+        toolbarButton = findViewById(R.id.toolbarButton1);
+        toolbarButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TestToolbar.class);
                 startActivity(intent);
             }
         });
@@ -52,6 +62,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.i(ACTIVITY_NAME, "in onDestroy()");
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.toolbar_menu, menu );
+        return true;
     }
 
     @Override
