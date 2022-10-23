@@ -1,8 +1,5 @@
 package com.example.androidassignments;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,6 +10,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,7 +32,6 @@ public class ChatWindowActivity extends AppCompatActivity {
         textInput = findViewById(R.id.editTextChat);
 
         sendButton = findViewById(R.id.sendButton);
-
         messageAdapter = new ChatAdapter( this );
         listView.setAdapter(messageAdapter);
     }
