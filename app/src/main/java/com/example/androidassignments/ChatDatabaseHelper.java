@@ -10,10 +10,7 @@ public class ChatDatabaseHelper extends SQLiteOpenHelper {
     public static final String ACTIVITY_NAME = "ChatDatabaseHelper";
 
     private static final String DATABASE_NAME = "Messages.db";
-    private static final int VERSION_NUM = 3;
-
-    private static final int OLD_VERSION = 2;
-    private static final int NEW_VERSION = 3;
+    private static final int VERSION_NUM = 4;
 
     public static final String TABLE_NAME = "Table1";
     public static final String KEY_ID_COLUMN = "KEY_ID";
@@ -39,7 +36,7 @@ public class ChatDatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL(DROP_TABLE);
-        Log.i(ACTIVITY_NAME, "Calling onUpgrade, oldVersion=" + OLD_VERSION + " new Version=" + NEW_VERSION);
+        Log.i(ACTIVITY_NAME, "Calling onUpgrade, oldVersion=" + oldVersion + " new Version=" + newVersion);
         onCreate(db);
     }
 
