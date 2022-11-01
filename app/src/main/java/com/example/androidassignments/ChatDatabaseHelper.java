@@ -26,6 +26,12 @@ public class ChatDatabaseHelper extends SQLiteOpenHelper {
     public ChatDatabaseHelper(Context ctx) {
         super(ctx, DATABASE_NAME, null, VERSION_NUM);
     }
+
+    //Created for JUnit Testing
+    public ChatDatabaseHelper(Context ctx, String databaseName) {
+        super(ctx, databaseName, null, VERSION_NUM);
+    }
+
     
     @Override
     public void onCreate(SQLiteDatabase db) {
