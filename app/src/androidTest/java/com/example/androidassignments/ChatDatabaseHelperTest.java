@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.rule.ActivityTestRule;
 
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
@@ -47,19 +48,29 @@ public class ChatDatabaseHelperTest {
         ContentValues contentValues = new ContentValues();
         contentValues.put(ChatDatabaseHelper.KEY_MESSAGE_COLUMN,MESSAGE);
         database.insert(ChatDatabaseHelper.TABLE_NAME,null,contentValues);
-        int i = 1;
+
         chatDatabaseHelper.onUpgrade(database,1,2);
 
         Cursor cursor = database.rawQuery("SELECT * FROM " + ChatDatabaseHelper.TABLE_NAME,null);
         cursor.moveToFirst();
+
         Assert.assertEquals(ChatDatabaseHelper.KEY_ID_COLUMN, cursor.getColumnName(0));
         Assert.assertEquals(ChatDatabaseHelper.KEY_MESSAGE_COLUMN, cursor.getColumnName(1));
         Assert.assertEquals(0, cursor.getCount());
 
-        File fdelete = new File(database.getPath());
+        String path = database.getPath();
+        File fdelete = new File(path);
         if (fdelete.exists()) {
             fdelete.delete();
         }
 
+    }
+    @After
+    public void tearDown(){
+        String path = database.getPath();
+        File fdelete = new File(path);
+        if (fdelete.exists()) {
+            fdelete.delete();
+        }
     }
 }
