@@ -1,16 +1,18 @@
 package com.example.androidassignments;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
     protected Button mainButton;
     protected Button chatButton;
     protected Button toolbarButton;
+    protected Button weatherButton;
+    protected Spinner spinner;
+    String city;
 
 
     @Override
@@ -42,6 +47,31 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, TestToolbar.class);
                 startActivity(intent);
+            }
+        });
+
+        weatherButton = findViewById(R.id.main_weather_button);
+        weatherButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, WeatherForecast.class);
+                intent.putExtra("city", city);
+                startActivity(intent);
+            }
+        });
+
+        spinner = findViewById(R.id.main_spinner);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, getResources().getStringArray(R.array.canadian_cities));
+        spinner.setAdapter(arrayAdapter);
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                city = (String)parent.getItemAtPosition(position);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                city = "Ottawa";
             }
         });
     }

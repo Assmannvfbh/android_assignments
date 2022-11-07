@@ -45,6 +45,18 @@
     <string name="newMessage">Enter new Message</string>
     <string name="messageHint">Message</string>
     <string name="noCharacter">Please enter characters</string>
+    <string name="weather">Weather</string>
+    <string name="weather_description">The Weather in: </string>
+
+
+    <string-array name="canadian_cities">
+        <item name="toronto">Toronto</item>
+        <item name="vancouver">Vancouver</item>
+        <item name="ottawa">Ottawa</item>
+        <item name="québec">Québec</item>
+        <item name="boston">Boston</item>
+        <item name="montreal">Montreal</item>
+    </string-array>
 
 
 </resources>

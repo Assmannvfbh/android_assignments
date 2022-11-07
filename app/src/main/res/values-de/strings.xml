@@ -39,6 +39,9 @@
     <string name="messageHint">Nachricht</string>
     <string name="noCharacter">Bitte Zeichen eingeben</string>
 
+    <string name="weather">Wetter</string>
+    <string name="weather_description">Das Wetter in: </string>
+
 
 
     <!-- Not used -->
@@ -49,4 +52,6 @@
     <string name="previous">Previous</string>
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
 </resources>

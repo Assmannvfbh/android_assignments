@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Niklas/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_dropdown_item.xml" value="0.25" />
         <entry key="..\:/Users/Niklas/WLU/Android_Programming_Assignments/android_assignments/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2075" />
         <entry key="..\:/Users/Niklas/WLU/Android_Programming_Assignments/android_assignments/app/src/main/res/drawable/app_icon.xml" value="0.2305" />
         <entry key="..\:/Users/Niklas/WLU/Android_Programming_Assignments/android_assignments/app/src/main/res/drawable/ic_app_icon_background.xml" value="0.2075" />
@@ -17,8 +18,10 @@
         <entry key="..\:/Users/Niklas/WLU/Android_Programming_Assignments/android_assignments/app/src/main/res/layout/activity_test_toolbar.xml" value="0.152" />
         <entry key="..\:/Users/Niklas/WLU/Android_Programming_Assignments/android_assignments/app/src/main/res/layout/activity_test_toolbar2.xml" value="0.25" />
         <entry key="..\:/Users/Niklas/WLU/Android_Programming_Assignments/android_assignments/app/src/main/res/layout/activity_test_toolbar3.xml" value="0.1" />
+        <entry key="..\:/Users/Niklas/WLU/Android_Programming_Assignments/android_assignments/app/src/main/res/layout/activity_weather_forecast.xml" value="0.25" />
         <entry key="..\:/Users/Niklas/WLU/Android_Programming_Assignments/android_assignments/app/src/main/res/layout/chat_row_incoming.xml" value="0.1" />
         <entry key="..\:/Users/Niklas/WLU/Android_Programming_Assignments/android_assignments/app/src/main/res/layout/chat_row_outgoing.xml" value="0.1" />
+        <entry key="..\:/Users/Niklas/WLU/Android_Programming_Assignments/android_assignments/app/src/main/res/layout/city_spinner.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/Niklas/WLU/Android_Programming_Assignments/android_assignments/app/src/main/res/layout/content_test_toolbar.xml" value="0.25" />
         <entry key="..\:/Users/Niklas/WLU/Android_Programming_Assignments/android_assignments/app/src/main/res/layout/dialog.xml" value="0.1" />
         <entry key="..\:/Users/Niklas/WLU/Android_Programming_Assignments/android_assignments/app/src/main/res/layout/fragment_first.xml" value="0.12239583333333333" />
