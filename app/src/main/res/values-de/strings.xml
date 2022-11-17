@@ -41,6 +41,7 @@
 
     <string name="weather">Wetter</string>
     <string name="weather_description">Das Wetter in: </string>
+    <string name="delete_message">Nachricht löschen</string>
 
 
 
